@@ -17,6 +17,8 @@
 		29695F342525974000BA308D /* AlamofireConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29695F332525974000BA308D /* AlamofireConnector.swift */; };
 		29695F362525B36200BA308D /* DiagServiceConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29695F352525B36200BA308D /* DiagServiceConnector.swift */; };
 		29695F382525B95000BA308D /* DiagWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29695F372525B94F00BA308D /* DiagWorker.swift */; };
+		29695F3B2525C6C500BA308D /* Color-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29695F3A2525C6C500BA308D /* Color-Extension.swift */; };
+		29695F3D2525CD1A00BA308D /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29695F3C2525CD1A00BA308D /* ListView.swift */; };
 		833ADAF81E3BBA3CB528E962 /* Pods_DiagiOSTechTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C427937F083474974237F71A /* Pods_DiagiOSTechTest.framework */; };
 		D15603DEC9B3F86298563096 /* Pods_DiagiOSTechTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0642E085AE21C302AF611652 /* Pods_DiagiOSTechTestTests.framework */; };
 /* End PBXBuildFile section */
@@ -47,6 +49,8 @@
 		29695F332525974000BA308D /* AlamofireConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireConnector.swift; sourceTree = "<group>"; };
 		29695F352525B36200BA308D /* DiagServiceConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagServiceConnector.swift; sourceTree = "<group>"; };
 		29695F372525B94F00BA308D /* DiagWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagWorker.swift; sourceTree = "<group>"; };
+		29695F3A2525C6C500BA308D /* Color-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Extension.swift"; sourceTree = "<group>"; };
+		29695F3C2525CD1A00BA308D /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		7E00C58F7AE406EA427E86B0 /* Pods-DiagiOSTechTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiagiOSTechTestTests.debug.xcconfig"; path = "Target Support Files/Pods-DiagiOSTechTestTests/Pods-DiagiOSTechTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8CF79F31E9EFC47B15AFEAEE /* Pods-DiagiOSTechTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiagiOSTechTestTests.release.xcconfig"; path = "Target Support Files/Pods-DiagiOSTechTestTests/Pods-DiagiOSTechTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		BFAA1C8C09FC3C5EAA951C2E /* Pods-DiagiOSTechTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiagiOSTechTest.release.xcconfig"; path = "Target Support Files/Pods-DiagiOSTechTest/Pods-DiagiOSTechTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 		29695F0F252586CA00BA308D /* DiagiOSTechTest */ = {
 			isa = PBXGroup;
 			children = (
+				29695F392525C69500BA308D /* Helper */,
 				29695F32252596EA00BA308D /* ServiceConnector */,
 				29695F10252586CA00BA308D /* AppDelegate.swift */,
 				29695F12252586CA00BA308D /* SceneDelegate.swift */,
@@ -126,6 +131,15 @@
 				29695F372525B94F00BA308D /* DiagWorker.swift */,
 			);
 			path = ServiceConnector;
+			sourceTree = "<group>";
+		};
+		29695F392525C69500BA308D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				29695F3A2525C6C500BA308D /* Color-Extension.swift */,
+				29695F3C2525CD1A00BA308D /* ListView.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		599A6AF71734C231F9EB0931 /* Pods */ = {
@@ -316,12 +330,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29695F3D2525CD1A00BA308D /* ListView.swift in Sources */,
 				29695F15252586CA00BA308D /* ViewController.swift in Sources */,
 				29695F11252586CA00BA308D /* AppDelegate.swift in Sources */,
 				29695F382525B95000BA308D /* DiagWorker.swift in Sources */,
 				29695F342525974000BA308D /* AlamofireConnector.swift in Sources */,
 				29695F13252586CA00BA308D /* SceneDelegate.swift in Sources */,
 				29695F362525B36200BA308D /* DiagServiceConnector.swift in Sources */,
+				29695F3B2525C6C500BA308D /* Color-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
