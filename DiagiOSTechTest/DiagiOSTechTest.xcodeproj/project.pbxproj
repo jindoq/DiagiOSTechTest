@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29695F11252586CA00BA308D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29695F10252586CA00BA308D /* AppDelegate.swift */; };
+		29695F13252586CA00BA308D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29695F12252586CA00BA308D /* SceneDelegate.swift */; };
+		29695F15252586CA00BA308D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29695F14252586CA00BA308D /* ViewController.swift */; };
+		29695F18252586CA00BA308D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29695F16252586CA00BA308D /* Main.storyboard */; };
+		29695F1A252586CC00BA308D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29695F19252586CC00BA308D /* Assets.xcassets */; };
+		29695F1D252586CC00BA308D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29695F1B252586CC00BA308D /* LaunchScreen.storyboard */; };
+		29695F28252586CC00BA308D /* DiagiOSTechTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29695F27252586CC00BA308D /* DiagiOSTechTestTests.swift */; };
+		833ADAF81E3BBA3CB528E962 /* Pods_DiagiOSTechTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C427937F083474974237F71A /* Pods_DiagiOSTechTest.framework */; };
+		D15603DEC9B3F86298563096 /* Pods_DiagiOSTechTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0642E085AE21C302AF611652 /* Pods_DiagiOSTechTestTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29695F24252586CC00BA308D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29695F05252586CA00BA308D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29695F0C252586CA00BA308D;
+			remoteInfo = DiagiOSTechTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0642E085AE21C302AF611652 /* Pods_DiagiOSTechTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiagiOSTechTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29695F0D252586CA00BA308D /* DiagiOSTechTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiagiOSTechTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29695F10252586CA00BA308D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		29695F12252586CA00BA308D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		29695F14252586CA00BA308D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		29695F17252586CA00BA308D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		29695F19252586CC00BA308D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		29695F1C252586CC00BA308D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		29695F1E252586CC00BA308D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29695F23252586CC00BA308D /* DiagiOSTechTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiagiOSTechTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29695F27252586CC00BA308D /* DiagiOSTechTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagiOSTechTestTests.swift; sourceTree = "<group>"; };
+		29695F29252586CC00BA308D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E00C58F7AE406EA427E86B0 /* Pods-DiagiOSTechTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiagiOSTechTestTests.debug.xcconfig"; path = "Target Support Files/Pods-DiagiOSTechTestTests/Pods-DiagiOSTechTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8CF79F31E9EFC47B15AFEAEE /* Pods-DiagiOSTechTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiagiOSTechTestTests.release.xcconfig"; path = "Target Support Files/Pods-DiagiOSTechTestTests/Pods-DiagiOSTechTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		BFAA1C8C09FC3C5EAA951C2E /* Pods-DiagiOSTechTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiagiOSTechTest.release.xcconfig"; path = "Target Support Files/Pods-DiagiOSTechTest/Pods-DiagiOSTechTest.release.xcconfig"; sourceTree = "<group>"; };
+		C427937F083474974237F71A /* Pods_DiagiOSTechTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiagiOSTechTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC8ADBA6D5BC91DD31C04A1A /* Pods-DiagiOSTechTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiagiOSTechTest.debug.xcconfig"; path = "Target Support Files/Pods-DiagiOSTechTest/Pods-DiagiOSTechTest.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29695F0A252586CA00BA308D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				833ADAF81E3BBA3CB528E962 /* Pods_DiagiOSTechTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29695F20252586CC00BA308D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D15603DEC9B3F86298563096 /* Pods_DiagiOSTechTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29695F04252586CA00BA308D = {
+			isa = PBXGroup;
+			children = (
+				29695F0F252586CA00BA308D /* DiagiOSTechTest */,
+				29695F26252586CC00BA308D /* DiagiOSTechTestTests */,
+				29695F0E252586CA00BA308D /* Products */,
+				599A6AF71734C231F9EB0931 /* Pods */,
+				C1C5FAC10DBAC9B0E713CFB8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		29695F0E252586CA00BA308D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29695F0D252586CA00BA308D /* DiagiOSTechTest.app */,
+				29695F23252586CC00BA308D /* DiagiOSTechTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29695F0F252586CA00BA308D /* DiagiOSTechTest */ = {
+			isa = PBXGroup;
+			children = (
+				29695F10252586CA00BA308D /* AppDelegate.swift */,
+				29695F12252586CA00BA308D /* SceneDelegate.swift */,
+				29695F14252586CA00BA308D /* ViewController.swift */,
+				29695F16252586CA00BA308D /* Main.storyboard */,
+				29695F19252586CC00BA308D /* Assets.xcassets */,
+				29695F1B252586CC00BA308D /* LaunchScreen.storyboard */,
+				29695F1E252586CC00BA308D /* Info.plist */,
+			);
+			path = DiagiOSTechTest;
+			sourceTree = "<group>";
+		};
+		29695F26252586CC00BA308D /* DiagiOSTechTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				29695F27252586CC00BA308D /* DiagiOSTechTestTests.swift */,
+				29695F29252586CC00BA308D /* Info.plist */,
+			);
+			path = DiagiOSTechTestTests;
+			sourceTree = "<group>";
+		};
+		599A6AF71734C231F9EB0931 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC8ADBA6D5BC91DD31C04A1A /* Pods-DiagiOSTechTest.debug.xcconfig */,
+				BFAA1C8C09FC3C5EAA951C2E /* Pods-DiagiOSTechTest.release.xcconfig */,
+				7E00C58F7AE406EA427E86B0 /* Pods-DiagiOSTechTestTests.debug.xcconfig */,
+				8CF79F31E9EFC47B15AFEAEE /* Pods-DiagiOSTechTestTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C1C5FAC10DBAC9B0E713CFB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C427937F083474974237F71A /* Pods_DiagiOSTechTest.framework */,
+				0642E085AE21C302AF611652 /* Pods_DiagiOSTechTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29695F0C252586CA00BA308D /* DiagiOSTechTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29695F2C252586CC00BA308D /* Build configuration list for PBXNativeTarget "DiagiOSTechTest" */;
+			buildPhases = (
+				C93463696B3C186480324C9C /* [CP] Check Pods Manifest.lock */,
+				29695F09252586CA00BA308D /* Sources */,
+				29695F0A252586CA00BA308D /* Frameworks */,
+				29695F0B252586CA00BA308D /* Resources */,
+				19FF92B49318B692BEA12D26 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiagiOSTechTest;
+			productName = DiagiOSTechTest;
+			productReference = 29695F0D252586CA00BA308D /* DiagiOSTechTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		29695F22252586CC00BA308D /* DiagiOSTechTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29695F2F252586CC00BA308D /* Build configuration list for PBXNativeTarget "DiagiOSTechTestTests" */;
+			buildPhases = (
+				55F473B72B5C84AF1A41F3A3 /* [CP] Check Pods Manifest.lock */,
+				29695F1F252586CC00BA308D /* Sources */,
+				29695F20252586CC00BA308D /* Frameworks */,
+				29695F21252586CC00BA308D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29695F25252586CC00BA308D /* PBXTargetDependency */,
+			);
+			name = DiagiOSTechTestTests;
+			productName = DiagiOSTechTestTests;
+			productReference = 29695F23252586CC00BA308D /* DiagiOSTechTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29695F05252586CA00BA308D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Duy Tu Tran";
+				TargetAttributes = {
+					29695F0C252586CA00BA308D = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					29695F22252586CC00BA308D = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 29695F0C252586CA00BA308D;
+					};
+				};
+			};
+			buildConfigurationList = 29695F08252586CA00BA308D /* Build configuration list for PBXProject "DiagiOSTechTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29695F04252586CA00BA308D;
+			productRefGroup = 29695F0E252586CA00BA308D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29695F0C252586CA00BA308D /* DiagiOSTechTest */,
+				29695F22252586CC00BA308D /* DiagiOSTechTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29695F0B252586CA00BA308D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29695F1D252586CC00BA308D /* LaunchScreen.storyboard in Resources */,
+				29695F1A252586CC00BA308D /* Assets.xcassets in Resources */,
+				29695F18252586CA00BA308D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29695F21252586CC00BA308D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19FF92B49318B692BEA12D26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiagiOSTechTest/Pods-DiagiOSTechTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiagiOSTechTest/Pods-DiagiOSTechTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DiagiOSTechTest/Pods-DiagiOSTechTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55F473B72B5C84AF1A41F3A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiagiOSTechTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C93463696B3C186480324C9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiagiOSTechTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29695F09252586CA00BA308D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29695F15252586CA00BA308D /* ViewController.swift in Sources */,
+				29695F11252586CA00BA308D /* AppDelegate.swift in Sources */,
+				29695F13252586CA00BA308D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29695F1F252586CC00BA308D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29695F28252586CC00BA308D /* DiagiOSTechTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29695F25252586CC00BA308D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29695F0C252586CA00BA308D /* DiagiOSTechTest */;
+			targetProxy = 29695F24252586CC00BA308D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		29695F16252586CA00BA308D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29695F17252586CA00BA308D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		29695F1B252586CC00BA308D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29695F1C252586CC00BA308D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29695F2A252586CC00BA308D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		29695F2B252586CC00BA308D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29695F2D252586CC00BA308D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC8ADBA6D5BC91DD31C04A1A /* Pods-DiagiOSTechTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3E227YTF67;
+				INFOPLIST_FILE = DiagiOSTechTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tranduytu.edu.DiagiOSTechTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		29695F2E252586CC00BA308D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFAA1C8C09FC3C5EAA951C2E /* Pods-DiagiOSTechTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3E227YTF67;
+				INFOPLIST_FILE = DiagiOSTechTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tranduytu.edu.DiagiOSTechTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		29695F30252586CC00BA308D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E00C58F7AE406EA427E86B0 /* Pods-DiagiOSTechTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3E227YTF67;
+				INFOPLIST_FILE = DiagiOSTechTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tranduytu.edu.DiagiOSTechTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiagiOSTechTest.app/DiagiOSTechTest";
+			};
+			name = Debug;
+		};
+		29695F31252586CC00BA308D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CF79F31E9EFC47B15AFEAEE /* Pods-DiagiOSTechTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3E227YTF67;
+				INFOPLIST_FILE = DiagiOSTechTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tranduytu.edu.DiagiOSTechTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiagiOSTechTest.app/DiagiOSTechTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29695F08252586CA00BA308D /* Build configuration list for PBXProject "DiagiOSTechTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29695F2A252586CC00BA308D /* Debug */,
+				29695F2B252586CC00BA308D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29695F2C252586CC00BA308D /* Build configuration list for PBXNativeTarget "DiagiOSTechTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29695F2D252586CC00BA308D /* Debug */,
+				29695F2E252586CC00BA308D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29695F2F252586CC00BA308D /* Build configuration list for PBXNativeTarget "DiagiOSTechTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29695F30252586CC00BA308D /* Debug */,
+				29695F31252586CC00BA308D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29695F05252586CA00BA308D /* Project object */;
+}

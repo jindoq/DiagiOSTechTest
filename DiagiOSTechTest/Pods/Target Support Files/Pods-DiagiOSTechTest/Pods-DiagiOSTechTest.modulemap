@@ -1,0 +1,6 @@
+framework module Pods_DiagiOSTechTest {
+  umbrella header "Pods-DiagiOSTechTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
