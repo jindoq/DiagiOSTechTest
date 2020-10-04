@@ -195,7 +195,7 @@ class DropDownView: DiagView {
         }
         dropDownIcon.snp.makeConstraints { (make) in
             make.centerY.equalTo(icon.snp.centerY)
-            make.width.height.equalTo(12)
+            make.width.height.equalTo(20)
             make.leading.equalTo(titleLbl.snp.trailing).inset(-8)
         }
         actionBtn.snp.makeConstraints { (make) in

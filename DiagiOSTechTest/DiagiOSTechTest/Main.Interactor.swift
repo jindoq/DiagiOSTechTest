@@ -45,6 +45,7 @@ extension MainViewController {
     
     func didGetSummarySuccess(_ data: MWorld) {
         ui.globalCell.configData(data)
+        ui.restWorldCell.configData(countries: data.countries)
         DispatchQueue.main.async {
             self.tableView.beginUpdates()
             self.tableView.endUpdates()

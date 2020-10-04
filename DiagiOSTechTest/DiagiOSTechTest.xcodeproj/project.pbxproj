@@ -23,6 +23,8 @@
 		0487C27425298C6100BAA70B /* GetSummaryWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487C27325298C6100BAA70B /* GetSummaryWorker.swift */; };
 		0487C2762529937800BAA70B /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487C2752529937800BAA70B /* PieChartView.swift */; };
 		0487C2782529C7AC00BAA70B /* RestWorldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487C2772529C7AC00BAA70B /* RestWorldCell.swift */; };
+		0487C27A2529CC9000BAA70B /* WorldListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487C2792529CC9000BAA70B /* WorldListView.swift */; };
+		0487C27C2529DCFB00BAA70B /* WordListCtr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487C27B2529DCFA00BAA70B /* WordListCtr.swift */; };
 		29695F11252586CA00BA308D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29695F10252586CA00BA308D /* AppDelegate.swift */; };
 		29695F13252586CA00BA308D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29695F12252586CA00BA308D /* SceneDelegate.swift */; };
 		29695F15252586CA00BA308D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29695F14252586CA00BA308D /* MainViewController.swift */; };
@@ -66,6 +68,8 @@
 		0487C27325298C6100BAA70B /* GetSummaryWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSummaryWorker.swift; sourceTree = "<group>"; };
 		0487C2752529937800BAA70B /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		0487C2772529C7AC00BAA70B /* RestWorldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestWorldCell.swift; sourceTree = "<group>"; };
+		0487C2792529CC9000BAA70B /* WorldListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldListView.swift; sourceTree = "<group>"; };
+		0487C27B2529DCFA00BAA70B /* WordListCtr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListCtr.swift; sourceTree = "<group>"; };
 		0642E085AE21C302AF611652 /* Pods_DiagiOSTechTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiagiOSTechTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29695F0D252586CA00BA308D /* DiagiOSTechTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiagiOSTechTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29695F10252586CA00BA308D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				0487C2712529875300BAA70B /* GlobalCell.swift */,
 				0487C2752529937800BAA70B /* PieChartView.swift */,
 				0487C2772529C7AC00BAA70B /* RestWorldCell.swift */,
+				0487C2792529CC9000BAA70B /* WorldListView.swift */,
+				0487C27B2529DCFA00BAA70B /* WordListCtr.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -401,6 +407,7 @@
 				0487C26E2528BC0600BAA70B /* Date-Extension.swift in Sources */,
 				0487C2762529937800BAA70B /* PieChartView.swift in Sources */,
 				29695F15252586CA00BA308D /* MainViewController.swift in Sources */,
+				0487C27C2529DCFB00BAA70B /* WordListCtr.swift in Sources */,
 				0487C25C2528344A00BAA70B /* UIMaker.swift in Sources */,
 				0487C2722529875300BAA70B /* GlobalCell.swift in Sources */,
 				0487C27425298C6100BAA70B /* GetSummaryWorker.swift in Sources */,
@@ -410,6 +417,7 @@
 				29695F382525B95000BA308D /* DiagWorker.swift in Sources */,
 				0487C2782529C7AC00BAA70B /* RestWorldCell.swift in Sources */,
 				0487C2572528326000BAA70B /* Main.UI.swift in Sources */,
+				0487C27A2529CC9000BAA70B /* WorldListView.swift in Sources */,
 				29695F342525974000BA308D /* AlamofireConnector.swift in Sources */,
 				0487C25E2528345500BAA70B /* Font-Extension.swift in Sources */,
 				29695F13252586CA00BA308D /* SceneDelegate.swift in Sources */,

@@ -16,6 +16,7 @@ struct MWorld {
     var newConfirmed: Int
     var newDeaths: Int
     var date: Date?
+    var countries = [MCountry]()
     
     init(_ raw: AnyObject) {
         let global = raw["Global"] as AnyObject
@@ -27,6 +28,11 @@ struct MWorld {
         newDeaths = global["NewDeaths"] as? Int ?? 0
         if let str = raw["Date"] as? String {
             date = Date(iso8601String: str)
+        }
+        if let country = raw["Countries"] as? [AnyObject] {
+            countries = country.map({ (item) -> MCountry in
+                MCountry(item)
+            })
         }
     }
 }

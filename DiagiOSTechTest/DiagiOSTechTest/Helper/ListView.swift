@@ -43,7 +43,13 @@ class DiagTableCell : UITableViewCell {
 }
 
 class DiagListController<C: DiagListCell<U>, U>: DiagController, UITableViewDataSource, UITableViewDelegate {
-    var datasource = [U]() { didSet { tableView.reloadData() }}
+    var datasource = [U]() {
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
     let cellId = "cellId"
     
     lazy var tableView: UITableView = { [weak self] in
@@ -128,6 +134,44 @@ class DiagStaticListController: DiagController, UITableViewDelegate, UITableView
         return datasource[indexPath.row] }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        didSelectRow(at: indexPath)
+    }
+    func didSelectRow(at indexPath: IndexPath) { }
+}
+
+class DiagListView<C: DiagListCell<U>, U>: DiagView, UITableViewDataSource, UITableViewDelegate {
+    var datasource = [U]() {
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
+    let cellId = "cellId"
+    
+    lazy var tableView: UITableView = { [weak self] in
+        let tb = UITableView()
+        tb.translatesAutoresizingMaskIntoConstraints = false
+        tb.separatorStyle = .none
+        tb.showsVerticalScrollIndicator = false
+        tb.dataSource = self
+        tb.delegate = self
+        tb.backgroundColor = .clear
+        tb.rowHeight = UITableView.automaticDimension
+        tb.estimatedRowHeight = 500
+        tb.register(C.self, forCellReuseIdentifier: cellId)
+        return tb
+    }()
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return datasource.count }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! C
+        cell.data = datasource[indexPath.row]
+        return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat { return UITableView.automaticDimension }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         didSelectRow(at: indexPath)
     }

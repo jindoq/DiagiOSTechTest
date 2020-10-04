@@ -20,6 +20,15 @@ class MainViewController: DiagStaticListController {
         output.getCountries()
         output.getSummary()
         ui.countryCell.dropDownView.actionBtn.addTarget(self, action: #selector(changeCountryAction), for: .touchUpInside)
+        ui.restWorldCell.dropDownView.actionBtn.addTarget(self, action: #selector(searchAction), for: .touchUpInside)
+    }
+    
+    @objc func searchAction() {
+        let vc = WorldListCtr()
+        vc.countries = ui.restWorldCell.worldListView.datasource
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .overFullScreen
+        present(nav, animated: true, completion: nil)
     }
 
     @objc func changeCountryAction() {
