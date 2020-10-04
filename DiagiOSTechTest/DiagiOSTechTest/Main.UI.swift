@@ -25,14 +25,27 @@ extension MainViewController {
 
 class HeaderCell: DiagTableCell {
     let titleLbl = UIMaker.makeTitleLabel(fontSize: 31, text: "Statistics")
+    let icon = UIImageView(image: UIImage(named: "ic_filter"))
+    let actionBtn = UIButton()
     
     override func setupView() {
         super.setupView()
-        addSubviews(views: titleLbl)
+        icon.change(color: UIColor.Diag.blue)
+        icon.contentMode = .scaleAspectFit
+        addSubviews(views: titleLbl, icon, actionBtn)
         titleLbl.snp.makeConstraints { (make) in
             make.leading.trailing.equalToSuperview().inset(padding)
             make.top.equalToSuperview().inset(padding/2)
             make.bottom.equalToSuperview()
+        }
+        icon.snp.makeConstraints { (make) in
+            make.trailing.equalToSuperview().inset(padding)
+            make.centerY.equalTo(titleLbl.snp.centerY)
+            make.height.width.equalTo(30)
+        }
+        actionBtn.snp.makeConstraints { (make) in
+            make.top.bottom.trailing.equalToSuperview()
+            make.width.equalTo(100)
         }
     }
 }

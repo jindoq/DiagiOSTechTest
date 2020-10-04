@@ -177,3 +177,68 @@ class DiagListView<C: DiagListCell<U>, U>: DiagView, UITableViewDataSource, UITa
     }
     func didSelectRow(at indexPath: IndexPath) { }
 }
+
+class DiagHeaderListView<H: DiagListHeader<B>, B, C: DiagListCell<T>, T>: DiagController, UITableViewDataSource, UITableViewDelegate {
+    lazy var table: UITableView = {
+        let tb = UITableView()
+        tb.delegate = self
+        tb.dataSource = self
+        tb.separatorStyle = .none
+        tb.backgroundColor = .clear
+        tb.showsVerticalScrollIndicator = false
+        tb.register(C.self, forCellReuseIdentifier: "Cell")
+        tb.register(H.self, forHeaderFooterViewReuseIdentifier: "Header")
+        tb.rowHeight = UITableView.automaticDimension
+        tb.estimatedRowHeight = 500
+        tb.sectionHeaderHeight = UITableView.automaticDimension
+        tb.estimatedSectionHeaderHeight = 500
+        return tb
+    }()
+    
+    var datasource = [(header: B, cells: [T])]() {
+        didSet {
+            DispatchQueue.main.async {
+                self.table.reloadData()
+            }
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {}
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return datasource[section].cells.count
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return datasource.count
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "Header") as? H
+        header?.configHeader(datasource[section].header)
+        return header
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! C
+        cell.data = datasource[indexPath.section].cells[indexPath.row]
+        return cell
+    }
+}
+
+class DiagHeader: UITableViewHeaderFooterView {
+    override init(reuseIdentifier: String?) {
+        super.init(reuseIdentifier: reuseIdentifier)
+        setupView()
+    }
+    
+    required public init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setupView() {}
+}
+
+class DiagListHeader<B>: DiagHeader {
+    open func configHeader(_ data: B) {}
+}

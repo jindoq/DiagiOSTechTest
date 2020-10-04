@@ -74,9 +74,8 @@ class WorldListView: DiagListView<WorldCell, MCountry> {
 class WorldCell: DiagListCell<MCountry> {
     let indexLbl = UIMaker.makeTitleLabel(color: UIColor.Diag.title_font)
     let countryLbl = UIMaker.makeContentLabel(fontSize: 17)
-    let totalCasesLbl = UIMaker.makeTitleLabel()
+    let totalCasesLbl = UIMaker.makeTitleLabel(alignment: .right)
     let newCasesLbl = UIMaker.makeContentLabel(fontSize: 13)
-    //let arrow = UIImageView(image: UIImage(named: "ic_arrow"))
     
     func configCell(_ data: MCountry, index: Int, color: UIColor, totalCases: String, newCases: String) {
         indexLbl.text = "\(index + 1)"
@@ -88,7 +87,6 @@ class WorldCell: DiagListCell<MCountry> {
     
     override func setupView() {
         super.setupView()
-        //arrow.change(color: UIColor.Diag.title_font)
         let view = UIView()
         view.backgroundColor = UIColor.Diag.background
         addSubviews(views: view)
@@ -105,14 +103,13 @@ class WorldCell: DiagListCell<MCountry> {
             make.centerY.equalToSuperview()
             make.trailing.equalTo(totalCasesLbl.snp.leading).inset(-padding/2)
         }
-        totalCasesLbl.snp.makeConstraints { (make) in
-            make.leading.equalTo(self.snp.centerX).multipliedBy(1.2)
-            make.centerY.equalToSuperview()
-        }
         newCasesLbl.snp.makeConstraints { (make) in
             make.bottom.equalTo(totalCasesLbl.snp.bottom).inset(2)
             make.trailing.equalToSuperview().inset(padding)
-            make.leading.equalTo(totalCasesLbl.snp.trailing).inset(-4)
+        }
+        totalCasesLbl.snp.makeConstraints { (make) in
+            make.centerY.equalToSuperview()
+            make.trailing.equalTo(newCasesLbl.snp.leading).inset(-4)
         }
     }
 }
