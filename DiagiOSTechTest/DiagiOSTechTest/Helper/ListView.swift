@@ -32,6 +32,7 @@ class DiagTableCell : UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupView()
         selectionStyle = .none
+        backgroundColor = .clear
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -43,7 +44,7 @@ class DiagTableCell : UITableViewCell {
 
 class DiagListController<C: DiagListCell<U>, U>: DiagController, UITableViewDataSource, UITableViewDelegate {
     var datasource = [U]() { didSet { tableView.reloadData() }}
-    fileprivate let cellId = "cellId"
+    let cellId = "cellId"
     
     lazy var tableView: UITableView = { [weak self] in
         let tb = UITableView()
@@ -56,6 +57,7 @@ class DiagListController<C: DiagListCell<U>, U>: DiagController, UITableViewData
         tb.register(C.self, forCellReuseIdentifier: cellId)
         tb.rowHeight = UITableView.automaticDimension
         tb.estimatedRowHeight = 500
+        tb.backgroundColor = .clear
         return tb
     }()
     

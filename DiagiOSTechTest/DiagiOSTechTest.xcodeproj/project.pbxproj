@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0487C2572528326000BAA70B /* Main.UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487C2562528326000BAA70B /* Main.UI.swift */; };
+		0487C2592528327000BAA70B /* Main.Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487C2582528327000BAA70B /* Main.Interactor.swift */; };
+		0487C25C2528344A00BAA70B /* UIMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487C25B2528344A00BAA70B /* UIMaker.swift */; };
+		0487C25E2528345500BAA70B /* Font-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487C25D2528345500BAA70B /* Font-Extension.swift */; };
+		0487C2612528352D00BAA70B /* Muli-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0487C25F2528352D00BAA70B /* Muli-SemiBold.ttf */; };
+		0487C2622528352D00BAA70B /* Muli-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0487C2602528352D00BAA70B /* Muli-Bold.ttf */; };
+		0487C264252837F500BAA70B /* UIView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487C263252837F500BAA70B /* UIView-Extension.swift */; };
+		0487C26625283AD400BAA70B /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487C26525283AD400BAA70B /* CountryCell.swift */; };
+		0487C26A252841C400BAA70B /* GetCountriesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487C269252841C400BAA70B /* GetCountriesWorker.swift */; };
+		0487C26C2528765700BAA70B /* GetDayOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487C26B2528765700BAA70B /* GetDayOne.swift */; };
+		0487C26E2528BC0600BAA70B /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487C26D2528BC0600BAA70B /* Date-Extension.swift */; };
+		0487C270252977FB00BAA70B /* CountriesCtr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487C26F252977FB00BAA70B /* CountriesCtr.swift */; };
 		29695F11252586CA00BA308D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29695F10252586CA00BA308D /* AppDelegate.swift */; };
 		29695F13252586CA00BA308D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29695F12252586CA00BA308D /* SceneDelegate.swift */; };
 		29695F15252586CA00BA308D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29695F14252586CA00BA308D /* MainViewController.swift */; };
@@ -34,6 +46,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0487C2562528326000BAA70B /* Main.UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.UI.swift; sourceTree = "<group>"; };
+		0487C2582528327000BAA70B /* Main.Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.Interactor.swift; sourceTree = "<group>"; };
+		0487C25B2528344A00BAA70B /* UIMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMaker.swift; sourceTree = "<group>"; };
+		0487C25D2528345500BAA70B /* Font-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font-Extension.swift"; sourceTree = "<group>"; };
+		0487C25F2528352D00BAA70B /* Muli-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-SemiBold.ttf"; sourceTree = "<group>"; };
+		0487C2602528352D00BAA70B /* Muli-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Bold.ttf"; sourceTree = "<group>"; };
+		0487C263252837F500BAA70B /* UIView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extension.swift"; sourceTree = "<group>"; };
+		0487C26525283AD400BAA70B /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		0487C269252841C400BAA70B /* GetCountriesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCountriesWorker.swift; sourceTree = "<group>"; };
+		0487C26B2528765700BAA70B /* GetDayOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDayOne.swift; sourceTree = "<group>"; };
+		0487C26D2528BC0600BAA70B /* Date-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date-Extension.swift"; sourceTree = "<group>"; };
+		0487C26F252977FB00BAA70B /* CountriesCtr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesCtr.swift; sourceTree = "<group>"; };
 		0642E085AE21C302AF611652 /* Pods_DiagiOSTechTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiagiOSTechTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29695F0D252586CA00BA308D /* DiagiOSTechTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiagiOSTechTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29695F10252586CA00BA308D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +102,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0487C2672528418400BAA70B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0487C26525283AD400BAA70B /* CountryCell.swift */,
+				0487C26F252977FB00BAA70B /* CountriesCtr.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0487C2682528419F00BAA70B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				0487C269252841C400BAA70B /* GetCountriesWorker.swift */,
+				0487C26B2528765700BAA70B /* GetDayOne.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		29695F04252586CA00BA308D = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +148,10 @@
 				29695F10252586CA00BA308D /* AppDelegate.swift */,
 				29695F12252586CA00BA308D /* SceneDelegate.swift */,
 				29695F14252586CA00BA308D /* MainViewController.swift */,
+				0487C2562528326000BAA70B /* Main.UI.swift */,
+				0487C2582528327000BAA70B /* Main.Interactor.swift */,
+				0487C2672528418400BAA70B /* UI */,
+				0487C2682528419F00BAA70B /* Entity */,
 				29695F16252586CA00BA308D /* Main.storyboard */,
 				29695F19252586CC00BA308D /* Assets.xcassets */,
 				29695F1B252586CC00BA308D /* LaunchScreen.storyboard */,
@@ -136,8 +182,14 @@
 		29695F392525C69500BA308D /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				0487C2602528352D00BAA70B /* Muli-Bold.ttf */,
+				0487C25F2528352D00BAA70B /* Muli-SemiBold.ttf */,
 				29695F3A2525C6C500BA308D /* Color-Extension.swift */,
+				0487C25D2528345500BAA70B /* Font-Extension.swift */,
+				0487C263252837F500BAA70B /* UIView-Extension.swift */,
+				0487C26D2528BC0600BAA70B /* Date-Extension.swift */,
 				29695F3C2525CD1A00BA308D /* ListView.swift */,
+				0487C25B2528344A00BAA70B /* UIMaker.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -246,6 +298,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0487C2612528352D00BAA70B /* Muli-SemiBold.ttf in Resources */,
+				0487C2622528352D00BAA70B /* Muli-Bold.ttf in Resources */,
 				29695F1D252586CC00BA308D /* LaunchScreen.storyboard in Resources */,
 				29695F1A252586CC00BA308D /* Assets.xcassets in Resources */,
 				29695F18252586CA00BA308D /* Main.storyboard in Resources */,
@@ -331,13 +385,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				29695F3D2525CD1A00BA308D /* ListView.swift in Sources */,
+				0487C264252837F500BAA70B /* UIView-Extension.swift in Sources */,
+				0487C26E2528BC0600BAA70B /* Date-Extension.swift in Sources */,
 				29695F15252586CA00BA308D /* MainViewController.swift in Sources */,
+				0487C25C2528344A00BAA70B /* UIMaker.swift in Sources */,
+				0487C2592528327000BAA70B /* Main.Interactor.swift in Sources */,
 				29695F11252586CA00BA308D /* AppDelegate.swift in Sources */,
+				0487C26625283AD400BAA70B /* CountryCell.swift in Sources */,
 				29695F382525B95000BA308D /* DiagWorker.swift in Sources */,
+				0487C2572528326000BAA70B /* Main.UI.swift in Sources */,
 				29695F342525974000BA308D /* AlamofireConnector.swift in Sources */,
+				0487C25E2528345500BAA70B /* Font-Extension.swift in Sources */,
 				29695F13252586CA00BA308D /* SceneDelegate.swift in Sources */,
 				29695F362525B36200BA308D /* DiagServiceConnector.swift in Sources */,
 				29695F3B2525C6C500BA308D /* Color-Extension.swift in Sources */,
+				0487C26C2528765700BAA70B /* GetDayOne.swift in Sources */,
+				0487C270252977FB00BAA70B /* CountriesCtr.swift in Sources */,
+				0487C26A252841C400BAA70B /* GetCountriesWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

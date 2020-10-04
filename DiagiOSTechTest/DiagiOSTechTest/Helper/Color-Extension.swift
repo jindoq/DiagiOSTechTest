@@ -16,6 +16,7 @@ extension UIColor {
         static let orange = UIColor.color(hex: "FF9500")
         static let red = UIColor.color(hex: "FF3B30")
         static let blue = UIColor.color(hex: "0079FF")
+        static let gray = UIColor.color(hex: "2C2C2E")
     }
 }
 
