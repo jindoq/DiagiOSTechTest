@@ -18,6 +18,7 @@ class MainViewController: DiagStaticListController {
         view.backgroundColor = UIColor.Diag.background
         datasource = ui.getCells()
         output.getCountries()
+        output.getSummary()
         ui.countryCell.dropDownView.actionBtn.addTarget(self, action: #selector(changeCountryAction), for: .touchUpInside)
     }
 

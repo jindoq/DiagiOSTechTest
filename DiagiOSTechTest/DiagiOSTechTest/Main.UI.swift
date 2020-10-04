@@ -14,9 +14,11 @@ extension MainViewController {
     class UI: NSObject {
         let headerCell = HeaderCell()
         let countryCell = CountryCell()
+        let globalCell = GlobalCell()
+        let restWorldCell = RestWorlCell()
         
         func getCells() -> [DiagTableCell] {
-            return [headerCell, countryCell]
+            return [headerCell, countryCell, globalCell, restWorldCell]
         }
     }
 }

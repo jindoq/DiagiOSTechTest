@@ -17,6 +17,7 @@ extension UIColor {
         static let red = UIColor.color(hex: "FF3B30")
         static let blue = UIColor.color(hex: "0079FF")
         static let gray = UIColor.color(hex: "2C2C2E")
+        static let title_font = UIColor.color(hex: "8D8D92")
     }
 }
 

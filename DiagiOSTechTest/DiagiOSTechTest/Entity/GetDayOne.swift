@@ -11,10 +11,22 @@ import Foundation
 extension Int {
     var newCasesDisplay: String {
         if self >= 0 {
-            return "+\(self)"
+            return "+\(self.formatThousand)"
         } else {
-            return "\(self)"
+            return self.formatThousand
         }
+    }
+    
+    var formatThousand: String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.groupingSeparator = " "
+        formatter.roundingMode = .down
+        formatter.maximumFractionDigits = 5
+        var formattedString = formatter.string(from: NSNumber(value: self))
+        formattedString = formattedString != nil ? formattedString! : "\(self)"
+        
+        return formattedString!
     }
 }
 

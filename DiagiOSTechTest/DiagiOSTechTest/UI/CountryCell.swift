@@ -14,7 +14,7 @@ class CountryCell: DiagTableCell {
     let dropDownView = DropDownView()
     let dateLbl = UIMaker.makeContentLabel()
     let newCasesTodayLbl = UIMaker.makeTitleLabel(fontSize: 35, color: UIColor.Diag.orange)
-    let newCasesYesterdayLbl = UIMaker.makeTitleLabel(fontSize: 19, color: UIColor.color(hex: "8D8D92"))
+    let newCasesYesterdayLbl = UIMaker.makeTitleLabel(fontSize: 19, color: UIColor.Diag.title_font)
     let totalCasesTitleLbl = UIMaker.makeContentLabel(text: "Total cases")
     let totalCasesValueLbl = UIMaker.makeTitleLabel(fontSize: 31)
     lazy var recoveredBar: UIView = {
@@ -39,6 +39,18 @@ class CountryCell: DiagTableCell {
     let deathTitleLbl = UIMaker.makeContentLabel(text: "Deaths", color: UIColor.Diag.red, alignment: .right)
     let deathValueLbl = UIMaker.makeTitleLabel(fontSize: 19, alignment: .right)
     
+    func setInitData() {
+        dateLbl.text = "New cases at \(Date().dateFormat)"
+        newCasesTodayLbl.text = "+0"
+        newCasesYesterdayLbl.text = "+0 the day before"
+        totalCasesValueLbl.text = "0"
+        recoveredValueLbl.text = "0"
+        activeValueLbl.text = "0"
+        deathValueLbl.text = "0"
+        deathBar.backgroundColor = UIColor.Diag.green
+        activeBar.backgroundColor = UIColor.Diag.green
+    }
+    
     func setCurrentCountry(_ country: MCountry) {
         dropDownView.titleLbl.text = country.country
         dropDownView.layoutIfNeeded()
@@ -48,7 +60,9 @@ class CountryCell: DiagTableCell {
         dateLbl.text = "New cases at \(data.date!.toString())"
         newCasesTodayLbl.text = "\(newCasesToday?.newCasesDisplay ?? "No Data")"
         newCasesYesterdayLbl.text = "\(newCasesYesterday?.newCasesDisplay ?? "No Data") the day before"
-        totalCasesValueLbl.text = "\(data.confirmed)"
+        totalCasesValueLbl.text = data.confirmed.formatThousand
+        deathBar.backgroundColor = UIColor.Diag.red
+        activeBar.backgroundColor = UIColor.Diag.orange
         deathBar.snp.remakeConstraints { (make) in
             make.trailing.top.bottom.equalToSuperview()
             make.width.equalToSuperview().multipliedBy(Double(data.deaths)/Double(data.confirmed))
@@ -58,13 +72,14 @@ class CountryCell: DiagTableCell {
             make.trailing.equalTo(deathBar.snp.leading)
             make.width.equalToSuperview().multipliedBy(Double(data.active)/Double(data.confirmed))
         }
-        recoveredValueLbl.text = "\(data.recovered)"
-        activeValueLbl.text = "\(data.active)"
-        deathValueLbl.text = "\(data.deaths)"
+        recoveredValueLbl.text = data.recovered.formatThousand
+        activeValueLbl.text = data.active.formatThousand
+        deathValueLbl.text = data.deaths.formatThousand
     }
     
     override func setupView() {
         super.setupView()
+        setInitData()
         dropDownView.icon.image = UIImage(named: "ic_country")
         let line = UIView()
         line.backgroundColor = UIColor.Diag.gray

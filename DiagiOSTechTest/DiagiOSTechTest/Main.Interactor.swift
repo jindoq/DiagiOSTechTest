@@ -20,6 +20,7 @@ extension MainViewController {
     
     func didGetDayOneSuccess(_ data: [MDayOne]) {
         guard data.count > 0, let todayData = data.last else {
+            ui.countryCell.setInitData()
             return
         }
         var newCasesToday: Int?
@@ -41,6 +42,14 @@ extension MainViewController {
             self.tableView.endUpdates()
         }
     }
+    
+    func didGetSummarySuccess(_ data: MWorld) {
+        ui.globalCell.configData(data)
+        DispatchQueue.main.async {
+            self.tableView.beginUpdates()
+            self.tableView.endUpdates()
+        }
+    }
 }
 
 extension MainViewController {
@@ -53,6 +62,10 @@ extension MainViewController {
             let worker = GetDayOneWorker(successAction: output?.didGetDayOneSuccess, failAction: nil)
             worker.country = country.slug
             worker.execute()
+        }
+        
+        func getSummary() {
+            GetSummaryWorker(successAction: output?.didGetSummarySuccess, failAction: nil).execute()
         }
         
         private weak var output: MainViewController?
